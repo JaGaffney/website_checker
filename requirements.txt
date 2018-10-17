@@ -1,0 +1,4 @@
+python v3.6
+
+pip install python-whois
+pip install discord
