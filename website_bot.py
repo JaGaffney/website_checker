@@ -8,7 +8,10 @@ Client = discord.Client()
 client = commands.Bot(command_prefix = "!")
 client.remove_command('help')
 
-TOKEN = "NDk0NzExMTAwNjgwNjk5OTE1.Do3fSg.5WYOWCzlXobo3aPPx0AEdMofooM"
+with open('secretcode.txt', 'r') as secret_code:
+    raw_data_secret_code=secret_code.read()
+
+TOKEN = raw_data_secret_code
 
 @client.event
 async def on_ready():
